@@ -29,6 +29,11 @@ function readStorage(): Record<string, EntryRow[]> {
 
 let cache: Record<string, EntryRow[]> | null = null
 
+/** 外部直接写了 localStorage（如测试或其它标签页）时，丢掉内存缓存重新读。 */
+export function invalidateRowsCache(): void {
+  cache = null
+}
+
 export function allRows(): Record<string, EntryRow[]> {
   if (cache === null) {
     cache = readStorage()

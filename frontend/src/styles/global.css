@@ -35,3 +35,23 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.panel-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+.panel-title { font-size: 14px; margin: 0 0 8px; }
+.panel-head .panel-title { margin: 0; }
+.editor { border-color: var(--brand); }
+.row-selected { background: #eef4ff; }
+.badge { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px; margin-left: 6px; }
+.badge.queued { background: #eef2f7; color: #344054; }
+.badge.running { background: #e0f2f1; color: #0f766e; }
+.badge.done { background: #e7f6ec; color: #18794e; }
+.badge.failed { background: #fdecea; color: #b42318; }
+.badge.blocked { background: #fff4e5; color: #b54708; }
+.badge.muted { background: #f2f4f7; color: #667085; }
+.muted-cell { color: var(--muted); font-size: 12px; }
+.failure-interval { display: block; color: #b42318; font-size: 12px; }
+.muted-action { color: var(--muted); font-size: 12px; }
+.issue-box { background: #fff4e5; border: 1px solid #f5c889; border-radius: 8px; padding: 10px 14px; margin-bottom: 12px; color: #b54708; font-size: 13px; }
+.issue-box ul { margin: 6px 0 0; padding-left: 18px; }
+.notice-text { color: #18794e; }
+.pager { display: flex; gap: 6px; }
